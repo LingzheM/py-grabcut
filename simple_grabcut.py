@@ -92,7 +92,6 @@ def grabcut_simple(
         g = maxflow.Graph[float]()
         nodeids = g.add_grid_nodes((h, w))
 
-        print(nodeids.shape, left_w.shape, up_w.shape)
 
         # data term: link to source (FG) and sink (BG)
         g.add_grid_tedges(nodeids, fg_cost, bg_cost)
